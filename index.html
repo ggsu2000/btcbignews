@@ -740,7 +740,7 @@
             <tbody id="trendRows"></tbody>
           </table>
         </div>
-        <div class="hint">※ 표시는 UI 연출은 실제 시세는 거래소/데이터 제공처에 따라 달라질 수 있습니다.</div>
+        <div class="hint">※ 표시는 실제 시세는 거래소/데이터 제공처에 따라 달라질 수 있습니다.</div>
       </div>
 
       <!-- 가입 카운터 + 수익 랭킹 버튼 -->
@@ -1120,7 +1120,7 @@
           <div class="t-tag">${tag}</div>
         </div>
         <div class="t-body">${body}</div>
-        <div class="t-foot">표시는 UI 연출일 수 있습니다 · 공식 조건은 별도 확인</div>
+        <div class="t-foot">실시간 랭커 거래</div>
       `;
       toastStack.prepend(el);
       while(toastStack.children.length > 3) toastStack.removeChild(toastStack.lastChild);
@@ -1137,7 +1137,7 @@
         pushToast(
           "투세븐빗 체결 알림",
           `<b>${pick(rUsers)}</b> 님의 <b>${pair}</b> <b>${side}</b> 기록이 업데이트되었습니다.`,
-          "알림형·데모"
+          "실시간 거래알림"
         );
       }
       if(t==="bonus"){
@@ -1319,4 +1319,5 @@
   </script>
 </body>
 </html>
+
 
