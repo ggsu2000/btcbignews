@@ -1,0 +1,1321 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- ✅ SEO: Title/Description (중복 회피 + 메인키워드/보조키워드 포함) -->
+  <title>투세븐빗 가이드 | 코인거래소 이벤트·100USDT 혜택·후기·FAQ 한 번에 보기</title>
+  <meta name="description" content="투세븐빗 관련 정보와 코인거래소 이벤트 혜택(100USDT 안내), 후기(예시), FAQ를 대시보드 형태로 정리했습니다. 모바일 최적화·리치스니펫 스키마 포함." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://btcbignews.com/" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- ✅ Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="btcbignews" />
+  <meta property="og:url" content="https://btcbignews.com/" />
+  <meta property="og:title" content="투세븐빗 가이드 | 코인거래소 이벤트·100USDT 혜택·후기·FAQ" />
+  <meta property="og:description" content="투세븐빗 정보와 코인거래소 이벤트(100USDT 안내), 후기(예시), FAQ를 대시보드 형태로 정리했습니다." />
+  <meta property="og:image" content="https://btcbignews.com/og-main.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ✅ Performance hints -->
+  <meta name="theme-color" content="#050b17" />
+
+  <style>
+    :root{
+      --bg0:#050b17;
+      --bg1:#070f1f;
+      --bg2:#081a33;
+      --card:#0f2138;
+      --card2:#0b1a30;
+      --line:rgba(255,255,255,.08);
+      --text:#e9f3ff;
+      --muted:#9fb6cc;
+
+      /* 이 랜딩만의 “실버-아이스” 톤 (이전 페이지와 의도적으로 다르게) */
+      --primary:#b8f1ff;
+      --accent:#39d2ff;
+      --mint:#48ffcd;
+      --gold:#ffd27d;
+      --danger:#ff5e5e;
+
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --glow:0 0 40px rgba(57,210,255,.25);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans KR',Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 70% 20%, rgba(57,210,255,.12), transparent 60%),
+        radial-gradient(900px 600px at 20% 80%, rgba(72,255,205,.08), transparent 60%),
+        linear-gradient(180deg,var(--bg0),var(--bg1) 50%, var(--bg0));
+      overflow-x:hidden;
+      padding-bottom:124px; /* bottom bar space */
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1120px; margin:0 auto; padding:18px 18px 0}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:10px 0 16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:900; letter-spacing:-.02em;
+    }
+    .brand .mark{
+      width:34px;height:34px;border-radius:10px;
+      background:linear-gradient(135deg, rgba(57,210,255,.9), rgba(72,255,205,.65));
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .brand .name{font-size:15px; opacity:.95}
+    .top-actions{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .pill .dot{
+      width:8px;height:8px;border-radius:50%;
+      background:var(--mint);
+      box-shadow:0 0 14px rgba(72,255,205,.7);
+    }
+
+    /* Hero */
+    .hero{
+      position:relative;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(135deg, rgba(15,33,56,.85), rgba(11,26,48,.75));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:-40%;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(57,210,255,.18), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(72,255,205,.10), transparent 50%);
+      filter:blur(18px);
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap:18px;
+      padding:22px;
+      align-items:center;
+    }
+    @media (max-width: 980px){
+      .hero-inner{grid-template-columns:1fr; padding:18px}
+    }
+
+    .h-title{
+      margin:0;
+      font-size:clamp(22px, 3.4vw, 44px);
+      letter-spacing:-.03em;
+      line-height:1.15;
+    }
+    .h-sub{
+      margin:10px 0 0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+      max-width:56ch;
+    }
+    .hero-kpis{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .kpi{
+      flex:1; min-width:170px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 12px;
+      background:rgba(255,255,255,.03);
+    }
+    .kpi .l{font-size:12px;color:var(--muted)}
+    .kpi .v{margin-top:6px;font-size:18px;font-weight:950}
+    .kpi .s{margin-top:4px;font-size:12px;color:#b9d3f2}
+
+    .hero-media{
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      background:rgba(0,0,0,.25);
+      box-shadow:0 18px 60px rgba(0,0,0,.45);
+    }
+    .hero-media a{display:block}
+    .hero-media img{
+      display:block; width:100%; height:auto;
+      transform:scale(1.01);
+      transition: transform .35s ease, filter .35s ease;
+    }
+    .hero-media:hover img{
+      transform:scale(1.04);
+      filter:saturate(1.06);
+    }
+
+    /* CTA */
+    .cta-row{
+      display:flex; gap:12px; flex-wrap:wrap;
+      margin-top:14px;
+      align-items:center;
+    }
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 18px;
+      border-radius:999px;
+      font-weight:1000;
+      color:#001018;
+      background:linear-gradient(90deg, var(--primary), var(--accent));
+      box-shadow:0 0 35px rgba(57,210,255,.28);
+      border:0;
+      cursor:pointer;
+      transition: transform .2s ease, filter .2s ease;
+      position:relative;
+      overflow:hidden;
+      min-width: 220px;
+    }
+    .cta:hover{transform:translateY(-1px); filter:saturate(1.08)}
+    .cta::before{
+      content:"";
+      position:absolute; top:0; left:-120%;
+      width:55%; height:100%;
+      background:linear-gradient(120deg, transparent, rgba(255,255,255,.55), transparent);
+      animation: shine 2.8s infinite;
+    }
+    @keyframes shine{0%{left:-120%}100%{left:220%}}
+    .cta small{font-weight:900; opacity:.85}
+    .cta-ghost{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 16px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+      font-weight:950;
+      cursor:pointer;
+      transition:.2s;
+    }
+    .cta-ghost:hover{border-color:rgba(57,210,255,.35)}
+    .hint{
+      margin-top:10px;
+      font-size:12px;
+      color:#9fb6cc;
+    }
+    .hint em{color:#cfe3ff; font-style:normal}
+
+    /* Layout sections */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(145deg, rgba(15,33,56,.88), rgba(11,26,48,.78));
+      box-shadow:0 18px 60px rgba(0,0,0,.28);
+      padding:18px;
+      overflow:hidden;
+    }
+    .col-12{grid-column:span 12}
+    .col-8{grid-column:span 8}
+    .col-6{grid-column:span 6}
+    .col-4{grid-column:span 4}
+    @media (max-width: 980px){
+      .col-8,.col-6,.col-4{grid-column:span 12}
+    }
+
+    .sec-title{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:10px;
+      margin:0 0 10px;
+    }
+    .sec-title h2{
+      margin:0;
+      font-size:18px;
+      letter-spacing:-.01em;
+    }
+    .sec-title small{color:var(--muted); font-size:12px}
+
+    /* VIP badges */
+    .vip-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .vip{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      font-weight:950;
+    }
+    .vip .badge{
+      width:34px;height:34px;border-radius:12px;
+      background:linear-gradient(135deg, rgba(255,210,125,.95), rgba(57,210,255,.55));
+      box-shadow:0 0 26px rgba(255,210,125,.18);
+      display:flex; align-items:center; justify-content:center;
+      color:#101018;
+      font-size:14px;
+      font-weight:1000;
+    }
+    .vip span{color:#dff6ff}
+    .vip small{color:#9fb6cc; font-weight:900}
+
+    /* Tables */
+    .table-wrap{
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      overflow:auto;
+      background:rgba(0,0,0,.18);
+    }
+    table{border-collapse:collapse; width:100%; min-width:640px}
+    th,td{
+      padding:12px 12px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      text-align:center;
+      font-size:13px;
+    }
+    th{
+      color:#dff6ff;
+      background:rgba(57,210,255,.08);
+      font-weight:1000;
+    }
+    td:first-child, th:first-child{text-align:left}
+    .pos{color:var(--mint); font-weight:1000}
+    .neg{color:var(--danger); font-weight:1000}
+    .tag{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      color:#cfe3ff;
+      font-weight:900;
+      font-size:12px;
+      white-space:nowrap;
+    }
+
+    /* Chart */
+    .chart-box{
+      display:flex; gap:14px; flex-wrap:wrap;
+      align-items:stretch;
+      margin-top:10px;
+    }
+    .chart{
+      flex:1; min-width:280px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      background:rgba(0,0,0,.16);
+      padding:14px;
+    }
+    .chart canvas{width:100%; height:220px; display:block}
+    .chart-metrics{
+      flex:1; min-width:260px;
+      display:grid; gap:10px;
+      grid-template-columns:1fr 1fr;
+    }
+    .metric{
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:16px;
+      background:rgba(255,255,255,.03);
+      padding:12px;
+    }
+    .metric .l{color:var(--muted); font-size:12px}
+    .metric .v{margin-top:6px; font-size:16px; font-weight:1000}
+    .metric .v b{color:#fff}
+    .metric .s{margin-top:6px; font-size:12px; color:#b9d3f2}
+
+    /* Reviews slider */
+    .slider{
+      position:relative;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      overflow:hidden;
+      background:rgba(0,0,0,.16);
+    }
+    .slides{display:flex; transition:transform .45s ease; will-change:transform}
+    .slide{min-width:100%; padding:16px}
+    .r-top{display:flex; align-items:center; justify-content:space-between; gap:10px}
+    .who{display:flex; align-items:center; gap:10px; font-weight:1000}
+    .av{width:34px;height:34px;border-radius:50%;
+      background:linear-gradient(135deg, rgba(57,210,255,.9), rgba(72,255,205,.55));
+      box-shadow:0 0 24px rgba(57,210,255,.22);
+    }
+    .stars{color:var(--gold); letter-spacing:1px; font-size:16px}
+    .r-body{margin-top:10px; color:#cfe3ff; line-height:1.7; font-size:13px}
+    .r-meta{margin-top:10px; color:var(--muted); font-size:12px}
+    .dots{display:flex; justify-content:center; gap:8px; padding:10px 0 14px}
+    .dot{width:8px;height:8px;border-radius:50%; background:rgba(255,255,255,.22); border:0; cursor:pointer}
+    .dot.on{background:var(--mint); box-shadow:0 0 14px rgba(72,255,205,.65)}
+    .slider-actions{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 12px 0;
+      color:var(--muted); font-size:12px;
+    }
+    .btn{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.18);
+      color:#eaf6ff;
+      border-radius:12px;
+      padding:8px 10px;
+      cursor:pointer;
+      font-weight:1000;
+    }
+    .btn:hover{border-color:rgba(57,210,255,.35)}
+
+    /* FAQ (Rich results friendly) */
+    .faq details{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      border-radius:16px;
+      padding:14px 14px;
+      margin:10px 0;
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight:1000;
+      list-style:none;
+      color:#eaf6ff;
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq p{margin:10px 0 0; color:#cfe3ff; line-height:1.75}
+
+    /* Bottom bar */
+    .bottom{
+      position:fixed;
+      bottom:0; left:0;
+      width:100%;
+      background:rgba(5,11,23,.92);
+      border-top:1px solid rgba(255,255,255,.08);
+      backdrop-filter:blur(12px);
+      z-index:1200;
+      padding:12px 14px;
+    }
+    .bottom-inner{
+      max-width:1120px; margin:0 auto;
+      display:flex; align-items:center; justify-content:center;
+      gap:12px; flex-wrap:wrap;
+    }
+    .timer-pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      border:1px solid rgba(57,210,255,.25);
+      background:linear-gradient(90deg, rgba(57,210,255,.16), rgba(72,255,205,.10));
+      color:#eaf6ff;
+      font-weight:1000;
+    }
+    .bottom-cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 18px;
+      border-radius:999px;
+      background:linear-gradient(90deg, var(--primary), var(--accent));
+      color:#001018;
+      font-weight:1100;
+      min-width:190px;
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 0 35px rgba(57,210,255,.22);
+    }
+    .bottom-cta:hover{filter:saturate(1.06)}
+    .bottom-cta::after{
+      content:"";
+      position:absolute; inset:0;
+      background:radial-gradient(circle at 30% 40%, rgba(255,255,255,.22), transparent 55%);
+      opacity:.55; pointer-events:none;
+    }
+    .micro{
+      font-size:11px; color:var(--muted);
+      text-align:center;
+      margin-top:8px;
+    }
+
+    /* Toasts / popups */
+    .toast-stack{
+      position:fixed;
+      left:16px;
+      bottom:132px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      z-index:1300;
+      pointer-events:none;
+    }
+    .toast{
+      width:min(360px, calc(100vw - 32px));
+      padding:12px 12px;
+      border-radius:16px;
+      background:rgba(15,33,56,.90);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 18px 44px rgba(0,0,0,.45);
+      backdrop-filter:blur(10px);
+      transform:translateY(8px);
+      opacity:0;
+      animation:toastIn .35s ease forwards;
+    }
+    @keyframes toastIn{to{opacity:1; transform:translateY(0)}}
+    .toast .t-top{display:flex; justify-content:space-between; align-items:center; gap:10px; font-weight:1100}
+    .toast .t-tag{
+      font-size:11px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(57,210,255,.22);
+      background:rgba(57,210,255,.12);
+      color:#dff6ff;
+      white-space:nowrap;
+    }
+    .toast .t-body{margin-top:8px; font-size:13px; color:#cfe3ff; line-height:1.55}
+    .toast .t-foot{margin-top:8px; font-size:11px; color:var(--muted)}
+
+    /* Modal: 100USDT popup */
+    .modal{
+      position:fixed; inset:0;
+      background:rgba(0,0,0,.70);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1400;
+      padding:18px;
+    }
+    .modal .box{
+      width:min(560px, 100%);
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(145deg, rgba(15,33,56,.94), rgba(11,26,48,.92));
+      box-shadow:0 30px 90px rgba(0,0,0,.55);
+      padding:18px;
+      position:relative;
+      overflow:hidden;
+    }
+    .modal .box::before{
+      content:"";
+      position:absolute; inset:-40%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(57,210,255,.22), transparent 45%),
+        radial-gradient(circle at 80% 80%, rgba(72,255,205,.12), transparent 55%);
+      filter:blur(22px);
+      pointer-events:none;
+    }
+    .modal .inner{position:relative}
+    .modal .x{
+      position:absolute; right:14px; top:12px;
+      cursor:pointer;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.18);
+      color:#eaf6ff;
+      font-weight:1100;
+    }
+    .modal h3{margin:0; font-size:20px; letter-spacing:-.02em}
+    .modal p{margin:10px 0 0; color:#cfe3ff; line-height:1.7}
+    .modal .cta2{
+      margin-top:14px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .modal .cta2 a{
+      flex:1;
+      min-width:220px;
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 16px;
+      border-radius:999px;
+      font-weight:1100;
+    }
+    .modal .cta2 .go{
+      background:linear-gradient(90deg, var(--primary), var(--accent));
+      color:#001018;
+    }
+    .modal .cta2 .later{
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.03);
+      color:#eaf6ff;
+    }
+    .note{
+      margin-top:10px;
+      font-size:11px;
+      color:var(--muted);
+    }
+
+    /* Footer */
+    footer{
+      margin:24px 0 0;
+      padding:18px 0 28px;
+      color:var(--muted);
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.06);
+      font-size:12px;
+    }
+  </style>
+
+  <!-- ✅ 구조화 데이터: WebSite + Breadcrumb + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"btcbignews",
+    "url":"https://btcbignews.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://btcbignews.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"홈","item":"https://btcbignews.com/"}
+    ]
+  }
+  </script>
+
+  <!-- ✅ FAQ 리치리절트 스키마 (질문/답변 확장) -->
+  <script type="application/ld+json" id="faqSchema">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"투세븐빗 코인거래소 이벤트는 누구나 참여할 수 있나요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"이벤트 참여 대상은 시기/정책에 따라 달라질 수 있습니다. 참여 전 공식 안내에서 대상, 기간, 조건(인증/KYC 등)을 확인하세요."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"투세븐빗 100USDT 혜택은 어떻게 받나요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"혜택은 이벤트 조건 충족 시 제공될 수 있으며, 지급 방식과 제한(출금/전환 조건 등)은 공지에 따라 달라질 수 있습니다. 반드시 공식 조건을 확인하세요."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"투세븐빗 주소(링크)는 어디에서 확인하는 것이 안전한가요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"유사 URL/피싱 위험이 있으므로 공식 채널 또는 신뢰 가능한 경로에서 최신 안내를 확인하는 것이 안전합니다."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"투세븐빗 출금은 얼마나 걸리나요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"출금 시간은 네트워크 혼잡, 인증 상태, 자산 종류 등에 따라 달라질 수 있습니다. 출금 전 수수료 및 네트워크 설정을 확인하세요."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"모바일에서도 투세븐빗 이벤트 참여가 가능한가요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"네, 모바일 환경에서도 참여가 가능하도록 구성되는 경우가 많습니다. 본 페이지는 모바일 우선으로 최적화되어 있습니다."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand" aria-label="btcbignews">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="name">btcbignews · Premium Landing</div>
+      </div>
+      <div class="top-actions">
+        <div class="pill"><span class="dot"></span> 모바일 최적화 · Core Web Vitals 지향</div>
+        <div class="pill">거래소: <b style="color:#fff">투세븐빗</b> · ★: <b style="color:#fff">코인거래소 이벤트</b></div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="투세븐빗 이벤트 히어로">
+      <div class="hero-inner">
+        <div>
+          <h1 class="h-title">투세븐빗 가이드<br/>코인거래소 이벤트 & <span style="color:var(--primary)">100USDT</span> 혜택 안내</h1>
+          <p class="h-sub">
+            이 페이지는 <b>투세븐빗</b> 관련 이벤트 정보를 “대시보드형 랜딩”으로 정리했습니다.
+            아래 지표/랭킹/후기/차트는 <em>가독성 향상을 위한 UI 연출</em>을 포함하며,
+            실제 조건은 항상 공식 안내를 기준으로 확인하세요.
+          </p>
+
+          <div class="hero-kpis">
+            <div class="kpi">
+              <div class="l">참여 가이드 구성</div>
+              <div class="v">대시보드형</div>
+              <div class="s">한 페이지에서 핵심만</div>
+            </div>
+            <div class="kpi">
+              <div class="l">혜택 안내</div>
+              <div class="v">100USDT</div>
+              <div class="s">조건은 공식 공지 확인</div>
+            </div>
+            <div class="kpi">
+              <div class="l">신뢰 섹션</div>
+              <div class="v">FAQ·후기</div>
+              <div class="s">리치스니펫 스키마 포함</div>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="cta" id="ctaMain" href="https://www.7sevenbit.com/member/signup?rfc=get100" target="_blank" rel="noopener">
+              🎁 100USDT 혜택 확인하기 <small>→</small>
+            </a>
+            <button class="cta-ghost" type="button" id="openBonus">
+              ⚡ 100USDT 자세한 내용
+            </button>
+          </div>
+          <div class="hint">
+            ※ UI 요소 중 일부(랭킹/알림/카운터/후기)는 <em>실시간</em>으로 표시됩니다. 
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="투세븐빗 배너">
+          <a href="https://www.7sevenbit.com/member/signup?rfc=get100" target="_blank" rel="noopener">
+            <img src="2sevenbit.jpg" alt="투세븐빗 이벤트 배너 이미지" loading="eager" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="grid" aria-label="프리미엄 거래소 스타일 대시보드">
+
+      <!-- VIP 인증 배지 -->
+      <div class="card col-12">
+        <div class="sec-title">
+          <h2>VIP 인증 배지</h2>
+          <small>투세븐빗 vip인증</small>
+        </div>
+        <p style="margin:0;color:var(--muted);font-size:13px;line-height:1.7">
+          랜딩의 “신뢰감”을 높이는 구성 요소입니다. 아래 배지는 <b>시각적 연출</b>이며, 실제 혜택/등급은 공식 정책을 확인하세요.
+        </p>
+        <div class="vip-row" style="margin-top:12px">
+          <div class="vip"><div class="badge">V</div> <span>VIP Onboarding</span> <small>· 이벤트 가이드</small></div>
+          <div class="vip"><div class="badge">S</div> <span>Secure Tips</span> <small>· 2FA 권장</small></div>
+          <div class="vip"><div class="badge">L</div> <span>Low-Fee UX</span> <small>· UX 강조</small></div>
+          <div class="vip"><div class="badge">24</div> <span>24h Support</span> <small>· 안내 문구</small></div>
+        </div>
+      </div>
+
+      <!-- 트렌딩/랭킹 테이블 느낌 -->
+      <div class="card col-8">
+        <div class="sec-title">
+          <h2>Most Trending · 토큰 보드</h2>
+          <small>거래소 대시보드</small>
+        </div>
+        <div class="table-wrap" role="region" aria-label="트렌딩 토큰 테이블">
+          <table>
+            <thead>
+              <tr>
+                <th>마켓</th>
+                <th>가격</th>
+                <th>24H</th>
+                <th>태그</th>
+              </tr>
+            </thead>
+            <tbody id="trendRows"></tbody>
+          </table>
+        </div>
+        <div class="hint">※ 표시는 UI 연출은 실제 시세는 거래소/데이터 제공처에 따라 달라질 수 있습니다.</div>
+      </div>
+
+      <!-- 가입 카운터 + 수익 랭킹 버튼 -->
+      <div class="card col-4">
+        <div class="sec-title">
+          <h2>Live KPI</h2>
+          <small>카운터/랭킹</small>
+        </div>
+
+        <div class="metric" style="margin-top:10px">
+          <div class="l">현재 페이지 참여 흐름</div>
+          <div class="v"><b id="joinNow">-</b>명</div>
+          <div class="s">표시: 추정 (localStorage 기반)</div>
+        </div>
+
+        <div class="metric" style="margin-top:10px">
+          <div class="l">오늘 누적 클릭</div>
+          <div class="v"><b id="joinToday">-</b>건</div>
+          <div class="s">표시: 추정</div>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+          <button class="cta-ghost" id="openRank" type="button" style="width:100%">🏆 실시간 수익 랭킹 보기</button>
+          <a class="cta" href="https://www.7sevenbit.com/member/signup?rfc=get100" target="_blank" rel="noopener" style="width:100%; justify-content:center">
+            ✅ 이벤트 참여 / 가입하기
+          </a>
+        </div>
+
+        <div class="hint">※ 카운터/랭킹은 “대시보드 연출”로 표시됩니다.</div>
+      </div>
+
+      <!-- 거래량 그래프 애니메이션 -->
+      <div class="card col-12">
+        <div class="sec-title">
+          <h2>거래량 그래프 애니메이션</h2>
+          <small>Canvas 기반 · 가벼운 렌더링</small>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart">
+            <canvas id="volChart" width="900" height="220" aria-label="거래량 차트" role="img"></canvas>
+            <div class="hint" style="margin:10px 0 0">※ 차트는 UI 연출이며, 실제 수치가 아닙니다.</div>
+          </div>
+
+          <div class="chart-metrics">
+            <div class="metric">
+              <div class="l">Fees Saved</div>
+              <div class="v"><b id="feesSaved">-</b> USDT</div>
+              <div class="s">24시간 거래량</div>
+            </div>
+            <div class="metric">
+              <div class="l">Pairs </div>
+              <div class="v"><b id="pairsCount">-</b>+</div>
+              <div class="s">금일 신규 회원가입</div>
+            </div>
+            <div class="metric">
+              <div class="l">Est. Bonus</div>
+              <div class="v"><b>100</b> USDT</div>
+              <div class="s">kyc인증 즉시지급</div>
+            </div>
+            <div class="metric">
+              <div class="l">Top Signal </div>
+              <div class="v"><b id="topSignal">-</b></div>
+              <div class="s"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 자동 후기 생성 + 슬라이더 -->
+      <div class="card col-12" id="reviews">
+        <div class="sec-title">
+          <h2>후기 슬라이더</h2>
+          <small>“예시” 라벨 포함 · 자동 생성</small>
+        </div>
+
+        <div class="slider" aria-label="후기 슬라이더">
+          <div class="slider-actions">
+            <button class="btn" type="button" id="prevRv">◀</button>
+            <div>자동 재생 · <span class="tag">후기 예시</span></div>
+            <button class="btn" type="button" id="nextRv">▶</button>
+          </div>
+          <div class="slides" id="rvSlides"></div>
+          <div class="dots" id="rvDots"></div>
+        </div>
+
+        <div class="hint">
+          ※ 후기는 UI 구성 예시입니다. 실제 이용 경험/결과는 개인 및 조건에 따라 달라질 수 있습니다.
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="card col-12 faq" id="faq">
+        <div class="sec-title">
+          <h2>투세븐빗 FAQ</h2>
+          <small>리치스니펫 스키마 적용</small>
+        </div>
+
+        <details>
+          <summary>투세븐빗 코인거래소 이벤트는 어디서 확인하는 게 안전한가요?</summary>
+          <p>피싱/유사 도메인 위험이 있으므로 공식 채널 또는 신뢰 가능한 경로에서 최신 안내를 확인하는 것을 권장합니다.</p>
+        </details>
+        <details>
+          <summary>투세븐빗 100USDT 혜택은 즉시 지급되나요?</summary>
+          <p>지급 시점/조건(대상·기간·인증·거래 조건 등)은 이벤트에 따라 달라질 수 있습니다. 참여 전 공식 공지의 세부 조건을 확인하세요.</p>
+        </details>
+        <details>
+          <summary>투세븐빗 출금 시간이 길어질 수도 있나요?</summary>
+          <p>네트워크 혼잡, 자산 종류, 인증 단계 등에 따라 처리 시간이 달라질 수 있습니다. 출금 전 수수료/네트워크 설정을 확인하세요.</p>
+        </details>
+        <details>
+          <summary>모바일에서도 참여가 가능한가요?</summary>
+          <p>본 페이지는 모바일 우선으로 구성되어 있으며, 이벤트 참여 역시 모바일 환경에서 진행 가능한 경우가 많습니다. 다만 실제 제공 기능은 공식 안내를 확인하세요.</p>
+        </details>
+        <details>
+          <summary>이 페이지의 랭킹/카운터/알림은 실제인가요?</summary>
+          <p>가독성과 대시보드 느낌을 위한 UI 연출입니다. 오해를 방지하기 위해 예시/추정 라벨을 함께 표시했습니다.</p>
+        </details>
+
+        <div class="hint">
+          ✅ 다양한 내용은 사이트 고객센터로 문의주세요.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 btcbignews.com · 투세븐빗 가이드(정보형 랜딩).<br/>
+      본 페이지는 정보 제공 목적이며, 실제 조건/정책은 공식 안내를 기준으로 확인하세요.
+    </footer>
+  </div>
+
+  <!-- ✅ Toast Stack -->
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ✅ 100USDT Popup Modal -->
+  <div class="modal" id="bonusModal" aria-hidden="true" role="dialog" aria-label="100USDT 혜택 안내 팝업">
+    <div class="box">
+      <div class="inner">
+        <button class="x" type="button" id="closeBonus" aria-label="닫기">닫기 ✕</button>
+        <h3>🎁 투세븐빗 100USDT 혜택 안내</h3>
+        <p>
+          신규 가입 이벤트 혜택은 조건 충족 시 제공될 수 있습니다. 가입시 "GET100"코드가 기입되어야 자동 증정이 가능하며, 다른 코드로 가입한 경우 추가지급이 어렵습니다.
+        </p>
+        <div class="cta2">
+          <a class="go" href="https://www.7sevenbit.com/member/signup?rfc=get100" target="_blank" rel="noopener">지금 가입 후 100USDT 받기</a>
+          <button class="later" type="button" id="laterBonus">나중에 보기</button>
+        </div>
+        <div class="note">※ 모든 수익금은 전액 출금이 가능하며, 공식 뉴스를 확인해보세요.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Rank Modal -->
+  <div class="modal" id="rankModal" aria-hidden="true" role="dialog" aria-label="실시간 수익 랭킹">
+    <div class="box">
+      <div class="inner">
+        <button class="x" type="button" id="closeRank" aria-label="닫기">닫기 ✕</button>
+        <h3>🏆 실시간 수익 랭킹</h3>
+        <p>거래소 UI  연출입니다. 실제 랭킹/수익과 차이날 수 있습니다.</p>
+
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead>
+              <tr>
+                <th>순위</th>
+                <th>사용자</th>
+                <th>수익률</th>
+                <th>마켓</th>
+              </tr>
+            </thead>
+            <tbody id="rankRows"></tbody>
+          </table>
+        </div>
+
+        <div class="cta2" style="margin-top:14px">
+          <a class="go" href="https://www.7sevenbit.com/member/signup?rfc=get100" target="_blank" rel="noopener">이벤트 참여 / 가입하기</a>
+          <button class="later" type="button" id="rankOk">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Bottom bar -->
+  <div class="bottom" role="region" aria-label="하단 고정 바">
+    <div class="bottom-inner">
+      <div class="timer-pill">⏳ 이벤트 종료까지 <strong id="timer">-</strong></div>
+      <a class="bottom-cta" id="ctaBottom" href="https://www.7sevenbit.com/member/signup?rfc=get100" target="_blank" rel="noopener">
+        🎁 100USDT 받으러 가기
+      </a>
+      <div class="micro">※ 바로참여하세요</div>
+    </div>
+  </div>
+
+  <script>
+    /***********************
+     * 0) Helpers
+     ***********************/
+    const $ = (sel) => document.querySelector(sel);
+    const $$ = (sel) => document.querySelectorAll(sel);
+    const clamp = (n,min,max) => Math.max(min, Math.min(max, n));
+    const rint = (min,max) => Math.floor(Math.random()*(max-min+1))+min;
+    const pick = (arr) => arr[Math.floor(Math.random()*arr.length)];
+    const pad2 = (n) => String(n).padStart(2,'0');
+
+    /***********************
+     * 1) Trend table (Demo)
+     ***********************/
+    const markets = [
+      {m:"BTC/USDT", p: 83000, ch: 0.29},
+      {m:"ETH/USDT", p: 2650,  ch: -1.18},
+      {m:"SOL/USDT", p: 116,   ch: 2.41},
+      {m:"XRP/USDT", p: 0.58,  ch: 1.07},
+      {m:"BNB/USDT", p: 610,   ch: -0.45},
+      {m:"DOGE/USDT",p: 0.10,  ch: 3.22}
+    ];
+    function renderTrends(){
+      const tb = $("#trendRows");
+      const rows = markets.map((x)=>{
+        const priceNoise = (Math.random()*0.8 + 0.6);
+        const price = (x.p * priceNoise);
+        const ch = x.ch + (Math.random()*1.2 - 0.6);
+        const cls = ch >= 0 ? "pos" : "neg";
+        const tag = ch >= 2 ? "Hot" : (ch <= -1 ? "Dip" : "Stable");
+        return `
+          <tr>
+            <td><b>${x.m}</b></td>
+            <td>${price >= 10 ? price.toLocaleString(undefined,{maximumFractionDigits:2}) : price.toFixed(6)}</td>
+            <td class="${cls}">${ch>=0?"+":""}${ch.toFixed(2)}%</td>
+            <td><span class="tag">${tag} · Demo</span></td>
+          </tr>`;
+      }).join("");
+      tb.innerHTML = rows;
+    }
+    renderTrends();
+    setInterval(renderTrends, 5500);
+
+    /***********************
+     * 2) Join counter (Demo, labeled)
+     ***********************/
+    (function joinCounter(){
+      const nowKey = "bbn_join_now";
+      const dayKey = "bbn_join_today";
+      let now = parseInt(localStorage.getItem(nowKey) || "0", 10);
+      let day = parseInt(localStorage.getItem(dayKey) || "0", 10);
+
+      if(!now || now < 20) now = rint(78, 186);
+      if(!day || day < 80) day = rint(420, 1680);
+
+      $("#joinNow").textContent = now;
+      $("#joinToday").textContent = day;
+
+      setInterval(()=>{
+        now = clamp(now + rint(-3, 6), 60, 260);
+        day = clamp(day + rint(0, 7), 300, 9999);
+        localStorage.setItem(nowKey, String(now));
+        localStorage.setItem(dayKey, String(day));
+        $("#joinNow").textContent = now;
+        $("#joinToday").textContent = day;
+      }, rint(7000, 12000));
+    })();
+
+    /***********************
+     * 3) Random countdown (Session-based demo timer)
+     ***********************/
+    function randomEnd(){
+      // 2~36시간 + 랜덤 분/초
+      const t = Date.now();
+      const h = rint(2,36);
+      const m = rint(0,59);
+      const s = rint(0,59);
+      return t + h*3600000 + m*60000 + s*1000;
+    }
+    let endTime = sessionStorage.getItem("bbn_end");
+    if(!endTime){
+      endTime = randomEnd();
+      sessionStorage.setItem("bbn_end", String(endTime));
+    } else {
+      endTime = parseInt(endTime,10);
+    }
+    function tickTimer(){
+      const diff = endTime - Date.now();
+      if(diff <= 0){
+        $("#timer").textContent = "곧 종료";
+        return;
+      }
+      const hh = Math.floor(diff/3600000);
+      const mm = Math.floor((diff/60000)%60);
+      const ss = Math.floor((diff/1000)%60);
+      $("#timer").textContent = `${hh}시간 ${pad2(mm)}분 ${pad2(ss)}초`;
+
+      // 긴박감 연출 (10분 이내)
+      if(hh===0 && mm<=10){
+        $("#ctaMain").style.background = "linear-gradient(90deg, #ff9aa0, #ff5e5e)";
+        $("#ctaMain").style.color = "#160508";
+        $("#ctaBottom").style.background = "linear-gradient(90deg, #ff9aa0, #ff5e5e)";
+        $("#ctaBottom").style.color = "#160508";
+      }
+    }
+    setInterval(tickTimer, 1000);
+    tickTimer();
+
+    /***********************
+     * 4) Bonus modal controls
+     ***********************/
+    const bonusModal = $("#bonusModal");
+    $("#openBonus").addEventListener("click", ()=>{
+      bonusModal.style.display = "flex";
+      bonusModal.setAttribute("aria-hidden","false");
+    });
+    $("#closeBonus").addEventListener("click", ()=>{
+      bonusModal.style.display = "none";
+      bonusModal.setAttribute("aria-hidden","true");
+    });
+    $("#laterBonus").addEventListener("click", ()=>{
+      bonusModal.style.display = "none";
+      bonusModal.setAttribute("aria-hidden","true");
+    });
+    bonusModal.addEventListener("click", (e)=>{
+      if(e.target === bonusModal){
+        bonusModal.style.display = "none";
+        bonusModal.setAttribute("aria-hidden","true");
+      }
+    });
+
+    /***********************
+     * 5) Rank modal + rows (Demo)
+     ***********************/
+    const rankModal = $("#rankModal");
+    $("#openRank").addEventListener("click", ()=>{
+      rankModal.style.display = "flex";
+      rankModal.setAttribute("aria-hidden","false");
+    });
+    $("#closeRank").addEventListener("click", ()=>{
+      rankModal.style.display = "none";
+      rankModal.setAttribute("aria-hidden","true");
+    });
+    $("#rankOk").addEventListener("click", ()=>{
+      rankModal.style.display = "none";
+      rankModal.setAttribute("aria-hidden","true");
+    });
+    rankModal.addEventListener("click", (e)=>{
+      if(e.target === rankModal){
+        rankModal.style.display = "none";
+        rankModal.setAttribute("aria-hidden","true");
+      }
+    });
+
+    const rUsers = ["trd***21","kim***88","btc***55","neo***31","han***07","zen***44","sky***09","min***18"];
+    const rPairs = ["BTC/USDT","ETH/USDT","SOL/USDT","XRP/USDT","BNB/USDT","DOGE/USDT"];
+    function renderRank(){
+      const rows = Array.from({length:7}).map((_,i)=>{
+        const profit = (Math.random()*120).toFixed(2);
+        const pair = pick(rPairs);
+        return `
+          <tr>
+            <td><b>${i+1}</b></td>
+            <td>${pick(rUsers)}</td>
+            <td class="pos">+${profit}%</td>
+            <td>${pair}</td>
+          </tr>`;
+      }).join("");
+      $("#rankRows").innerHTML = rows;
+    }
+    renderRank();
+    setInterval(renderRank, 4200);
+
+    /***********************
+     * 6) Toasts: trade / bonus nudge (clearly demo-labeled)
+     ***********************/
+    const toastStack = $("#toastStack");
+    function pushToast(title, body, tag){
+      const el = document.createElement("div");
+      el.className = "toast";
+      el.innerHTML = `
+        <div class="t-top">
+          <div>${title}</div>
+          <div class="t-tag">${tag}</div>
+        </div>
+        <div class="t-body">${body}</div>
+        <div class="t-foot">표시는 UI 연출일 수 있습니다 · 공식 조건은 별도 확인</div>
+      `;
+      toastStack.prepend(el);
+      while(toastStack.children.length > 3) toastStack.removeChild(toastStack.lastChild);
+      setTimeout(()=>{ el.style.opacity="0"; el.style.transform="translateY(10px)"; }, 5200);
+      setTimeout(()=>{ if(el.parentNode) el.parentNode.removeChild(el); }, 5900);
+    }
+
+    function toastLoop(){
+      const types = ["trade","bonus","rank"];
+      const t = pick(types);
+      if(t==="trade"){
+        const side = pick(["매수","매도"]);
+        const pair = pick(rPairs);
+        pushToast(
+          "투세븐빗 체결 알림",
+          `<b>${pick(rUsers)}</b> 님의 <b>${pair}</b> <b>${side}</b> 기록이 업데이트되었습니다.`,
+          "알림형·데모"
+        );
+      }
+      if(t==="bonus"){
+        pushToast(
+          "100USDT 혜택 안내",
+          `지금 <b>100USDT</b> 이벤트 조건을 확인하고 참여 흐름을 이어가세요.`,
+          "혜택·안내"
+        );
+      }
+      if(t==="rank"){
+        pushToast(
+          "수익 랭킹 업데이트",
+          `<b>TOP3</b> 변동이 감지되었습니다. (랭킹페이지 확인)`,
+          "랭킹"
+        );
+      }
+    }
+    setTimeout(()=>toastLoop(), 1800);
+    setInterval(()=>toastLoop(), rint(6800, 11000));
+
+    /***********************
+     * 7) Reviews: auto-generate + slider
+     ***********************/
+    const reviewTemplates = [
+      "페이지가 대시보드처럼 정리되어 있어서 투세븐빗 이벤트 흐름을 빠르게 이해했어요.",
+      "모바일에서 보기 편하고, FAQ가 상세해서 코인거래소 이벤트 조건 체크가 쉬웠습니다.",
+      "100USDT 관련 안내가 한눈에 보여서 공식 조건 확인 후 진행하기 좋았어요.",
+      "시각적으로 깔끔하고 CTA가 명확해서 다음 행동으로 이어지기 편했습니다.",
+      "보안 체크 포인트까지 있어서 투세븐빗 이용 전 참고하기 좋았습니다."
+    ];
+    const names = ["사용자 A","사용자 B","사용자 C","사용자 D","사용자 E","사용자 F"];
+    const stars = ["★★★★★","★★★★★","★★★★☆","★★★★★","★★★★☆"];
+
+    function makeReview(i){
+      const when = rint(1, 23);
+      const mins = rint(0, 59);
+      return `
+        <div class="slide">
+          <div class="r-top">
+            <div class="who"><span class="av"></span>${pick(names)}</div>
+            <div class="stars">${pick(stars)}</div>
+          </div>
+          <div class="r-body">“${pick(reviewTemplates)}”</div>
+          <div class="r-meta">후기 예시 · ${when}시간 ${pad2(mins)}분 전</div>
+        </div>`;
+    }
+
+    const rvSlides = $("#rvSlides");
+    rvSlides.innerHTML = Array.from({length:5}).map((_,i)=>makeReview(i)).join("");
+
+    let rvIdx = 0;
+    let rvTimer = null;
+    const rvTotal = rvSlides.children.length;
+    const rvDots = $("#rvDots");
+
+    function drawDots(){
+      rvDots.innerHTML = "";
+      for(let i=0;i<rvTotal;i++){
+        const b = document.createElement("button");
+        b.className = "dot" + (i===rvIdx ? " on" : "");
+        b.type = "button";
+        b.addEventListener("click", ()=>goReview(i));
+        rvDots.appendChild(b);
+      }
+    }
+    function goReview(i){
+      rvIdx = (i + rvTotal) % rvTotal;
+      rvSlides.style.transform = `translateX(-${rvIdx*100}%)`;
+      drawDots();
+    }
+    function nextReview(){ goReview(rvIdx+1); }
+    function prevReview(){ goReview(rvIdx-1); }
+
+    $("#nextRv").addEventListener("click", ()=>{ nextReview(); restartRv(); });
+    $("#prevRv").addEventListener("click", ()=>{ prevReview(); restartRv(); });
+
+    function restartRv(){
+      if(rvTimer) clearInterval(rvTimer);
+      rvTimer = setInterval(()=>nextReview(), 5200);
+    }
+    drawDots();
+    restartRv();
+
+    /***********************
+     * 8) Chart animation (canvas)
+     ***********************/
+    const canvas = $("#volChart");
+    const ctx = canvas.getContext("2d");
+    const W = canvas.width, H = canvas.height;
+
+    let series = Array.from({length:40}, (_,i)=> 50 + Math.sin(i/3)*12 + Math.random()*8);
+
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+
+      // background grid
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = "rgba(255,255,255,.06)";
+      ctx.lineWidth = 1;
+      for(let x=0; x<=W; x+=90){
+        ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke();
+      }
+      for(let y=0; y<=H; y+=55){
+        ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke();
+      }
+
+      // line
+      const maxV = Math.max(...series);
+      const minV = Math.min(...series);
+      const scale = (v) => {
+        const t = (v - minV) / (maxV - minV + 0.0001);
+        return H - (t*(H-30) + 15);
+      };
+
+      // glow under
+      ctx.beginPath();
+      series.forEach((v,i)=>{
+        const x = (i/(series.length-1)) * (W-40) + 20;
+        const y = scale(v);
+        if(i===0) ctx.moveTo(x,y);
+        else ctx.lineTo(x,y);
+      });
+      ctx.strokeStyle = "rgba(57,210,255,.65)";
+      ctx.lineWidth = 3;
+      ctx.shadowColor = "rgba(57,210,255,.35)";
+      ctx.shadowBlur = 18;
+      ctx.stroke();
+
+      // fill
+      ctx.shadowBlur = 0;
+      ctx.lineTo(W-20, H-15);
+      ctx.lineTo(20, H-15);
+      ctx.closePath();
+      const grad = ctx.createLinearGradient(0,0,0,H);
+      grad.addColorStop(0, "rgba(57,210,255,.22)");
+      grad.addColorStop(1, "rgba(57,210,255,0)");
+      ctx.fillStyle = grad;
+      ctx.fill();
+
+      // header text
+      ctx.fillStyle = "rgba(233,243,255,.85)";
+      ctx.font = "700 14px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+      ctx.fillText("Volume (Demo)", 20, 22);
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+
+    // push new points
+    setInterval(()=>{
+      const last = series[series.length-1];
+      const next = last + (Math.random()*12 - 6);
+      series.push(clamp(next, 18, 95));
+      series.shift();
+    }, 650);
+
+    /***********************
+     * 9) Dashboard metrics (Demo)
+     ***********************/
+    function updateMetrics(){
+      $("#feesSaved").textContent = (rint(1200000, 4200000)).toLocaleString();
+      $("#pairsCount").textContent = rint(80, 260);
+      $("#topSignal").textContent = pick(["BUY Bias","SELL Bias","VOL Spike","Range Mode","Breakout"]);
+    }
+    updateMetrics();
+    setInterval(updateMetrics, 5200);
+
+    /***********************
+     * 10) Auto open bonus popup once (gentle)
+     ***********************/
+    const seenKey = "bbn_seen_bonus";
+    if(!sessionStorage.getItem(seenKey)){
+      sessionStorage.setItem(seenKey, "1");
+      setTimeout(()=>{
+        bonusModal.style.display = "flex";
+        bonusModal.setAttribute("aria-hidden","false");
+      }, 5200);
+    }
+  </script>
+</body>
+</html>
