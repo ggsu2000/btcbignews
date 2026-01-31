@@ -560,6 +560,90 @@
       border-top:1px solid rgba(255,255,255,.06);
       font-size:12px;
     }
+
+    /* ===== HERO PREMIUM ANIMATION ADD-ON ===== */
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:-40%;
+background:
+radial-gradient(circle at 20% 20%, rgba(57,210,255,.18), transparent 40%),
+radial-gradient(circle at 80% 80%, rgba(72,255,205,.10), transparent 50%);
+animation:heroGlowMove 18s linear infinite;
+pointer-events:none;
+}
+
+@keyframes heroGlowMove{
+0%{transform:rotate(0deg) scale(1)}
+50%{transform:rotate(180deg) scale(1.2)}
+100%{transform:rotate(360deg) scale(1)}
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(2px 2px at 10% 20%, #fff, transparent),
+radial-gradient(2px 2px at 30% 80%, #fff, transparent),
+radial-gradient(2px 2px at 70% 40%, #fff, transparent),
+radial-gradient(2px 2px at 90% 60%, #fff, transparent);
+animation:starMove 30s linear infinite;
+opacity:.35;
+pointer-events:none;
+}
+
+@keyframes starMove{
+from{transform:translateY(0)}
+to{transform:translateY(-200px)}
+}
+
+.h-title{
+animation:fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp{
+0%{opacity:0; transform:translateY(20px)}
+100%{opacity:1; transform:translateY(0)}
+}
+
+.hero-media img{
+animation:heroFloat 7s ease-in-out infinite;
+}
+
+@keyframes heroFloat{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+.cta:hover{
+transform:translateY(-2px) scale(1.02);
+box-shadow:0 0 40px rgba(57,210,255,.45);
+}
+
+.shooting-star{
+position:absolute;
+top:20%;
+left:-10%;
+width:3px;
+height:3px;
+background:white;
+box-shadow:0 0 12px white;
+animation:shoot 6s linear infinite;
+}
+
+@keyframes shoot{
+0%{transform:translateX(0) translateY(0)}
+100%{transform:translateX(120vw) translateY(-60vh)}
+}
+
   </style>
 
   <!-- ✅ 구조화 데이터: WebSite + Breadcrumb + FAQPage -->
@@ -1316,9 +1400,30 @@
         bonusModal.setAttribute("aria-hidden","false");
       }, 5200);
     }
+    /* HERO 텍스트 글로우 */
+const heroTitle = document.querySelector(".h-title");
+setInterval(()=>{
+if(heroTitle){
+heroTitle.style.textShadow="0 0 25px rgba(57,210,255,0.6)";
+setTimeout(()=>heroTitle.style.textShadow="none",1200);
+}
+},5000);
+
+/* 유성 생성 */
+const hero = document.querySelector(".hero");
+setInterval(()=>{
+if(hero){
+const star = document.createElement("div");
+star.className="shooting-star";
+hero.appendChild(star);
+setTimeout(()=>star.remove(),6000);
+}
+},7000);
+
   </script>
 </body>
 </html>
+
 
 
 
